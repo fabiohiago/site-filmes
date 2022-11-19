@@ -1,0 +1,80 @@
+:root{
+  --bg-color1: #111314;
+  --bg-color2: #0F0F0F;
+}
+/*Carousel*/
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+nav{
+  background-color: var(--bg-color2) !important;
+  box-shadow: 0px 2px 2px 0px black;
+}
+
+body {
+  background: var(--bg-color1) !important;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s;
+}
+
+.swiper-slide a {
+  text-decoration: none !important;
+  opacity: 0;
+  transition: .3s;
+}
+
+.card-img-overlay{
+  margin-top: 60%;
+}
+
+.swiper-slide:hover img{
+  filter: brightness(0.5);
+}
+
+.swiper-slide:hover a{
+  opacity: 100%;
+}
+
+.categorias{
+  height: 30px;
+  border-left: 5px solid red;
+}
